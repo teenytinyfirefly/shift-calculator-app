@@ -92,6 +92,7 @@ def get_shift_type_or_info(shift_str, day_num):
 
 st.title("Shift Day Number and Type Calculator")
 
+
 st.markdown(f"""
 Calculates the **Day Number (1-4)** based on the reference date:
 **{ANCHOR_DATE.strftime('%B %d, %Y')} = Day {ANCHOR_DAY_NUM}**.
@@ -99,6 +100,7 @@ Calculates the **Day Number (1-4)** based on the reference date:
 For **Gold** or **Silver** shifts, it also determines the type (Early/Middle/Late).
 For other shifts, it provides the Day Number and refers you to official schedules.
 """)
+
 
 # Input Widgets
 # Use st.date_input for a user-friendly calendar picker. It returns a datetime.date object.
@@ -139,4 +141,4 @@ if st.button("Calculate Day Number & Shift Type"):
             st.error(f"An unexpected error occurred during calculation: {e}")
 
 st.markdown("---") # Visual separator
-st.caption("Based on rules provided, anchored to March 12, 2025 (Day 3).")
+st.caption("Calculate the assigned number of a date and the shift type (for gold and silver only)")
