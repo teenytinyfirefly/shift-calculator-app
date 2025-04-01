@@ -94,11 +94,10 @@ st.title("Shift Day Number and Type Calculator")
 
 
 st.markdown(f"""
-Calculates the **Day Number (1-4)** based on the reference date:
-**{ANCHOR_DATE.strftime('%B %d, %Y')} = Day {ANCHOR_DAY_NUM}**.
+Calculates the **Day Number (1-4)** based on a known reference date.
 
 For **Gold** or **Silver** shifts, it also determines the type (Early/Middle/Late).
-For other shifts, it provides the Day Number and refers you to official schedules.
+For other shifts, please refer to the schedule and use the day number to determine type of shift.
 """)
 
 
