@@ -106,7 +106,7 @@ For other shifts, it provides the Day Number and refers you to official schedule
 # Use st.date_input for a user-friendly calendar picker. It returns a datetime.date object.
 input_date = st.date_input("Select the date:")
 
-input_shift_raw = st.text_input("Enter the shift name (e.g., Gold 5, Silver, Twilight Bronze):")
+input_shift_raw = st.text_input("Enter the shift name (e.g., Gold 5, Silver 2, Blue):")
 
 # Button to trigger calculation
 if st.button("Calculate Day Number & Shift Type"):
